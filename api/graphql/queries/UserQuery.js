@@ -18,6 +18,10 @@ const userQuery = {
       name: 'username',
       type: GraphQLString,
     },
+    name: {
+      name: 'name',
+      type: GraphQLString,
+    },
     email: {
       name: 'email',
       type: GraphQLString,

@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 
 const sequelize = require('../../config/database');
 
-const tableName = 'notes';
+const tableName = 'comments';
 
 const Comment = sequelize.define('Comment', {
   text: Sequelize.TEXT,

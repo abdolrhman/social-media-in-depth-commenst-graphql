@@ -1,5 +1,5 @@
 const merge = require('lodash.merge');
-const {GraphQLString} = require("graphql");
+const { GraphQLString } = require('graphql');
 
 const { UserType } = require('../types');
 const { User } = require('../../models');
@@ -38,14 +38,18 @@ const createUser = {
       name: 'username',
       type: GraphQLString,
     },
+    name: {
+      name: 'name',
+      type: GraphQLString,
+    },
     email: {
       name: 'email',
       type: GraphQLString,
     },
   },
-  resolve: (value, { username, email }) => (
+  resolve: (value, { username, email, name }) => (
     User.create({
-      username, email
+      username, email, name,
     })
   ),
 

@@ -8,12 +8,11 @@ const {
   updateUser,
   deleteUser,
 } = require('./mutations');
-const { noteQuery } = require('./queries');
+const { noteQuery, noteComments } = require('./queries');
 const {
   createNote,
-  updateNote,
-  deleteNote,
-  createUser
+  createUser,
+  createComment,
 } = require('./mutations');
 
 const RootQuery = new GraphQLObjectType({
@@ -22,6 +21,7 @@ const RootQuery = new GraphQLObjectType({
   fields: () => ({
     user: userQuery,
     note: noteQuery,
+    noteComments,
   }),
 });
 
@@ -33,8 +33,7 @@ const RootMutation = new GraphQLObjectType({
     deleteUser,
     createUser,
     createNote,
-    updateNote,
-    deleteNote,
+    createComment,
   }),
 });
 

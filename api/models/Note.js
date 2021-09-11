@@ -11,8 +11,7 @@ const Note = sequelize.define('Note', {
   },
 }, { tableName });
 
-Note.associate = (models) => {
-  Note.hasMany(Comment, { as: 'comments', foreignKey: 'noteId' });
-  Note.belongsTo(models.User);
-};
+Note.hasMany(Comment, { as: 'comments', foreignKey: 'noteId' });
+
+// Note.belongsTo(User);
 module.exports = { Note };

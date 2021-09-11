@@ -1,7 +1,5 @@
 const {
   createNote,
-  updateNote,
-  deleteNote,
 } = require('./NoteMutation');
 const {
   createUser,
@@ -9,11 +7,14 @@ const {
   deleteUser,
 } = require('./UserMutation');
 
+const {
+  createComment,
+} = require('./CommentMutation');
+
 module.exports = {
   createNote,
-  updateNote,
-  deleteNote,
   createUser,
   updateUser,
   deleteUser,
+  createComment,
 };

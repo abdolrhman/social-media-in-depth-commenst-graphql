@@ -1,8 +1,10 @@
+const {GraphQLList} = require("graphql");
 const {
   GraphQLObjectType,
   GraphQLInt,
   GraphQLString,
 } = require('graphql');
+const { CommentType } = require('./CommentType');
 
 const NoteType = new GraphQLObjectType({
   name: 'Note',
@@ -19,6 +21,10 @@ const NoteType = new GraphQLObjectType({
     content: {
       type: GraphQLString,
       resolve: (note) => note.content,
+    },
+    comments: {
+      type: new GraphQLList(CommentType),
+      resolve: (note) => note.getComments(),
     },
     createdAt: {
       type: GraphQLString,

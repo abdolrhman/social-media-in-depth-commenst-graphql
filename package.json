@@ -1,15 +1,16 @@
 {
-  "name": "express-rest-api-boilerplate",
-  "version": "0.0.0",
-  "author": "Lukas Aichbauer <l.aichbauer@gmail.com>",
+  "name": "social-media-in-depth-commenst-graphql",
+  "version": "1",
+  "description": "query in depth comments with graphql",
+  "author": "abdolrahman <iwcw4i@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aichbauer/express-rest-api-boilerplate.git"
+    "url": "git+https://github.com/abdolrhman/social-media-in-depth-commenst-graphql"
   },
-  "homepage": "https://github.com/aichbauer/express-rest-api-boilerplate#readme",
+  "homepage": "https://github.com/abdolrhman/social-media-in-depth-commenst-graphql#readme",
   "bugs": {
-    "url": "https://github.com/aichbauer/express-rest-api-boilerplate/issues"
+    "url": "https://github.com/abdolrhman/social-media-in-depth-commenst-graphql/issues"
   },
   "scripts": {
     "project": "node ./scripts/index.js",

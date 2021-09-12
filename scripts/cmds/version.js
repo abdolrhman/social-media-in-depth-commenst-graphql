@@ -7,7 +7,7 @@ const aliases = ['v'];
 const desc = 'Show the current version number';
 
 /* istanbul ignore next */
-const handler = () => console.info(`express-graphql-boilerplate version ${version}`);
+const handler = () => console.info(`social-media-in-depth-commenst-graphql version ${version}`);
 
 module.exports = {
   command,

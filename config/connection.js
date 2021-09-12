@@ -1,17 +1,17 @@
 const development = {
-  database: 'socialmedia',
-  username: 'root',
-  password: 'root',
-  host: 'localhost',
-  dialect: 'postgres',
+  database: process.env.POSTGRES_DB_NAME || 'socialmedia',
+  username: process.env.POSTGRES_USER || 'root',
+  password: process.env.POSTGRES_PASSWORD || 'root',
+  host: process.env.POSTGRES_HOST || 'localhost',
+  dialect: process.env.POSTGRES_DIACT || 'postgres',
 };
 
 const testing = {
-  database: 'databasename',
-  username: 'username',
-  password: 'password',
-  host: 'localhost',
-  dialect: 'postgres',
+  database: process.env.POSTGRES_DB_NAME || 'databasename',
+  username: process.env.POSTGRES_USER || 'root',
+  password: process.env.POSTGRES_PASSWORD || 'root',
+  host: process.env.POSTGRES_HOST || 'localhost',
+  dialect: process.env.POSTGRES_DIACT || 'postgres',
 };
 
 const production = {

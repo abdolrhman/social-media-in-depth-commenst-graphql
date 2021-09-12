@@ -24,7 +24,10 @@
     "pretest": "npm run lint",
     "production": "cross-env NODE_ENV=production node ./api/api.js",
     "test": "cross-env NODE_ENV=testing jest --coverage",
-    "test-ci": "jest --coverage --forceExit"
+    "test-ci": "jest --coverage --forceExit",
+    "docker:db:hard-init": "docker-compose run app",
+    "docker:db:up": "docker-compose up db",
+    "docker:dev": "docker-compose up --build"
   },
   "jest": {
     "globals": {

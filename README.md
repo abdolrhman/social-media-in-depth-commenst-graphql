@@ -79,6 +79,16 @@ $ yarn add mysql2
 $ yarn add pg pg-hstore
 ```
 
+or 
+
+
+### with docker
+```sh
+$ run `npm install`
+- create database first, then
+$ run `npm run docker:db:hard-init` - to setup database into init state
+$ run `npm run docker:dev` - to start app and database
+```
 SQLite is supported out of the box as it is the default database.
 
 ## Folder Structure
